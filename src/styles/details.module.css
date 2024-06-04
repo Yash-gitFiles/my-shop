@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+  gap: 32px;
+  /* margin-top: 160px; */
+}
+
+.container .imgContainer {
+  height: 400px;
+  width: 100%;
+}
+
+.container .imgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .descContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container .descContainer .qty {
+  display: flex;
+  gap: 8px;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
